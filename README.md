@@ -4,19 +4,19 @@ A playground that uses Xcode 9 and the new and update API in Foundation This pla
 1. Create a `NSLinguisticTagger` object with `NSLinguisticTagScheme.nameType` scheme.
 `.nameType` scheme finds proper names like personal, places and organizations based on the context:
 
-```
+```swift
 let tagger = NSLinguisticTagger(tagSchemes: [NSLinguisticTagScheme.nameType], options: 0)
 ```
 
 2. Set the text on the tagger: 
 
-```
+```swift
 tagger.string = String(text)
 ```
 
 3. Specify the range on which you want to run natural language processing, and type of tags you're interested or not interested.
 
-```
+```swift
 // Whole range of text.
 let range: NSRange = NSMakeRange(0, text.length)
 
@@ -26,14 +26,14 @@ let options: NSLinguisticTagger.Options = [.omitPunctuation, .omitWhitespace, .j
 
 4. Specify the tags you're interested:
 
-```
+```swift
 // Interested in all names.
 let tags: [NSLinguisticTag] = [.personalName, .placeName, .organizationName]
 ```
 
 5. Finally, enumerate through the recognized tags and extract them:
 
-```
+```swift
 var personals: [String] = []
 var places: [String] = []
 var organizations: [String] = []
