@@ -1,5 +1,5 @@
 # natural-language-processing
-A playground that uses Xcode 9 and the new and update API in Foundation This playground uses Xcode beta, and it may not work with feature releases of Xcode 9. You can download the latest version of Xcode 9 from Apple’s developer portal (http://www.developer.apple.com).
+A playground that uses Xcode 9 and the new and update API in Foundation This playground uses Xcode beta, and it may not work with feature releases of Xcode 9. You can download the latest version of Xcode 9 from Apple’s developer portal: https://developer.apple.com.
 
 1. Create a `NSLinguisticTagger` object with `NSLinguisticTagScheme.nameType` scheme.
 `.nameType` scheme finds proper names like personal, places and organizations based on the context:
